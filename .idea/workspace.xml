@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fc212477-00ed-4f85-96ad-11f064912bb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Population.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Simulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Population.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Simulation$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Simulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulation1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulation1.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +53,7 @@
       <recent name="C:\Users\andre\Documents\GitHub\IFT2015-Devoir2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Population">
+  <component name="RunManager" selected="Application.Simulate">
     <configuration name="Population" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pedigree.Population" />
       <module name="IFT2015-Devoir2" />
@@ -72,10 +67,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Simulation" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pedigree.Simulation" />
+    <configuration name="Simulate" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pedigree.Simulate" />
       <module name="IFT2015-Devoir2" />
-      <option name="PROGRAM_PARAMETERS" value="10 500" />
+      <option name="PROGRAM_PARAMETERS" value="8 700" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pedigree.*" />
@@ -100,10 +95,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Simulate" />
+      <item itemvalue="Application.Population" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Population" />
-        <item itemvalue="Application.Simulation" />
+        <item itemvalue="Application.Simulate" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +127,7 @@
       <workItem from="1582676735983" duration="4354000" />
       <workItem from="1582681223329" duration="387000" />
       <workItem from="1582684312880" duration="1507000" />
-      <workItem from="1582768842797" duration="3136000" />
+      <workItem from="1582768842797" duration="8463000" />
     </task>
     <servers />
   </component>
@@ -136,52 +135,52 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582768989986">
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582777548327">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582768989986" />
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777548327" />
     <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582684812637" />
     <state x="447" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1582516726366">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="447" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582516726366" />
     <state x="447" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582506150920" />
-    <state width="1237" height="379" key="GridCell.Tab.0.bottom" timestamp="1582771320548">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582777635786">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777635786" />
     <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582685839611" />
-    <state width="1237" height="379" key="GridCell.Tab.0.center" timestamp="1582771320548">
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1582777635786">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777635786" />
     <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582685839611" />
-    <state width="1237" height="379" key="GridCell.Tab.0.left" timestamp="1582771320548">
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1582777635786">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777635786" />
     <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582685839611" />
-    <state width="1237" height="379" key="GridCell.Tab.0.right" timestamp="1582771320548">
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1582777635786">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777635786" />
     <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582685839611" />
-    <state width="1237" height="379" key="GridCell.Tab.1.bottom" timestamp="1582771320548">
+    <state width="1237" height="379" key="GridCell.Tab.1.bottom" timestamp="1582777091290">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.1.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
-    <state width="1237" height="379" key="GridCell.Tab.1.center" timestamp="1582771320548">
+    <state width="1237" height="379" key="GridCell.Tab.1.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
+    <state width="1237" height="379" key="GridCell.Tab.1.center" timestamp="1582777091290">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.1.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
-    <state width="1237" height="379" key="GridCell.Tab.1.left" timestamp="1582771320548">
+    <state width="1237" height="379" key="GridCell.Tab.1.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
+    <state width="1237" height="379" key="GridCell.Tab.1.left" timestamp="1582777091290">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.1.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
-    <state width="1237" height="379" key="GridCell.Tab.1.right" timestamp="1582771320548">
+    <state width="1237" height="379" key="GridCell.Tab.1.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
+    <state width="1237" height="379" key="GridCell.Tab.1.right" timestamp="1582777091290">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="379" key="GridCell.Tab.1.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582771320548" />
+    <state width="1237" height="379" key="GridCell.Tab.1.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
     <state x="151" y="0" key="SettingsEditor" timestamp="1582527971788">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -259,6 +258,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
           <line>139</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Simulation.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Simulation.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
