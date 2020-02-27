@@ -10,12 +10,10 @@ public class Event implements Comparable<Event> {
 
     public Event(Sim x, double time, eventType type) {
         this.type = type;
-
+        this.sim=x;
         if(time >= 0) { this.time = time; }
         else { throw new InvalidParameterException("Le temps doit etre non-negatif");
         }
-
-        this.sim=x;
     }
 
 

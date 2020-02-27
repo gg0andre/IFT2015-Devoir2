@@ -1,5 +1,7 @@
 package pedigree;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Random;
 
@@ -33,7 +35,7 @@ public class Simulation {
             if (E.time > Tmax) break; // arrêter à Tmax
 
             if (E != null && E.sim.getDeathTime() > E.time) {
-                System.out.println("population : " + population.getSize() + "\tat time : " + E.time);
+                //System.out.println("population : " + population.getSize() + "\tat time : " + E.time);
                 switch (E.type) {
                     case Birth:
                         if (E.sim.getSex() == Sim.Sex.F) {
@@ -45,7 +47,7 @@ public class Simulation {
 
                         //duree de vie du sim + temp de naissance
                         double deathTime = ageModel.randomAge(RND) + E.time;
-                        E.sim.setDeathTime(deathTime);  //Ajouter au sim son deathTime
+                        E.sim.setDeath(deathTime);  //Ajouter au sim son deathTime
 
                         //creer le event et l'ajouter a la PQ
                         Event death = new Event(E.sim, deathTime, Event.eventType.Death);
@@ -77,7 +79,10 @@ public class Simulation {
                         break;
 
                     case Death:
-                        population.deleteMin();
+                        System.out.println("population-: " + population.getSize() + "\tat time : " + E.time);
+
+                    default:
+                        Sim delete = population.deleteMin();
                         break;
                 }
 
@@ -110,23 +115,24 @@ public class Simulation {
                     {   y = z; }
                 }
             } while (y == null);
-        } else { y = x.getMate(); }
+        } else { y = x.getMate(); } //retourne le partenaire precedent
         return y;
     }
 
-    public static void main(String[] args) {
-        int n; int Tmax;
-
-        if (args.length != 2) {
-            System.out.println("Invalid number of arguments");
-        } else {
-            n = Integer.parseInt(args[0]);
-            Tmax = Integer.parseInt(args[1]);
-
-            Simulation test = new Simulation();
-            test.simulate(n, Tmax);
-        }
-
-    }
+//    public static void main(String[] args) {
+//        int n; int Tmax;
+//
+//        if (args.length != 2) {
+//            System.out.println("Invalid number of arguments");
+//        } else {
+//            n = Integer.parseInt(args[0]);
+//            Tmax = Integer.parseInt(args[1]);
+//
+//            Simulation test = new Simulation();
+//            test.simulate(n, Tmax);
+//
+//        }
+//
+//    }
 
 }

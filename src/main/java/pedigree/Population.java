@@ -1,12 +1,20 @@
 package pedigree;
 
+/**
+ * MinHeap
+ *
+ * fonctions principales : deleteMin() et add(Sim newSim)
+ * implementent les methodes sink() et swim()
+ *
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 
 public class Population implements Comparator<Sim> {
-    protected ArrayList<Sim> population;
+    protected ArrayList<Sim> population;        //arrayList pour la population
 
     public Population() {
         population = new ArrayList<Sim>();
@@ -27,14 +35,13 @@ public class Population implements Comparator<Sim> {
         Collections.swap(population, index1, index2);
     }
 
-
     public Sim peek() {
         if(population.size() == 0) throw new IllegalStateException();
         return population.get(0);
     }
 
     public Sim deleteMin() {
-        if(population.size() == 0) throw new IllegalStateException();
+        if(population.size() == 0) throw new IllegalStateException("No population ");
 
         Sim sim = population.get(0);
         int last = population.size() - 1;
@@ -48,25 +55,25 @@ public class Population implements Comparator<Sim> {
 
     private void sink() {
         int indexC = 0;
-        while (hasLeftChild(indexC)) {
+        while (hasLeftChild(indexC)) {  //pas besoin de regarder l'enfant droit s'il n'y a pas d'enfant a gauche
             int smallerChildIndex = getLeftChildIndex(indexC);
 
-            if(hasRightChild(indexC) && compare(population.get(getLeftChildIndex(indexC)),
-                    population.get(getRightChildIndex(indexC))) == 1) {
+            if(hasRightChild(indexC) && compare(population.get(getLeftChildIndex(indexC)) ,
+                    population.get(getRightChildIndex(indexC))) == 1) {     //comparer l'enfant gauche et droit
                 smallerChildIndex = getRightChildIndex(indexC);
             }
 
-            if(compare(population.get(smallerChildIndex),population.get(indexC)) == -1) {
+            if(compare(population.get(smallerChildIndex),population.get(indexC)) == -1) {   //comparer l'enfant au parent
                 swap(smallerChildIndex,indexC);
 
             } else { break;}
-            indexC = smallerChildIndex;
+            indexC = smallerChildIndex; //recommencer
         }
 
     }
 
     public void add(Sim newSim) {
-        population.add(population.size(), newSim);
+        population.add(newSim);
         swim(population.size()-1);
     }
 
@@ -74,8 +81,8 @@ public class Population implements Comparator<Sim> {
         int indexP = 0;
         while (hasParent(i)) {
             indexP = getParentIndex(i);
-            if(compare(population.get(i), population.get(indexP)) == -1) {
-                swap(i, indexP);
+            if(compare(population.get(i), population.get(indexP)) == -1) {  //comparer l'enfant courant avec son parent
+                swap(i, indexP);    //enfant devient le parent maintenant
                 i = indexP;
             } else { break;}
         }
@@ -119,13 +126,15 @@ public class Population implements Comparator<Sim> {
 //        s4.setDeath(100);
 //        s5.setDeath(99);
 //
-//        M.add(s1);
-//        M.add(s0);
-//        M.add(s5);
 //        M.add(s4);
-//        M.add(s3);
+//        M.add(s1);
+//        M.add(s5);
 //        M.add(s2);
+//        M.add(s3);
+//        M.add(s0);
 //        Sim s = M.deleteMin();
+//        System.out.println(s);
+//        s=M.deleteMin();
 //        System.out.println(s);
 //        s = M.randomSim();
 //        System.out.println(s);
