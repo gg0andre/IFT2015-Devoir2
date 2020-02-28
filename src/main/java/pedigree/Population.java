@@ -15,9 +15,14 @@ import java.util.Random;
 
 public class Population implements Comparator<Sim> {
     protected ArrayList<Sim> population;        //arrayList pour la population
+    protected enum typeHeap{Min, Max};
+    protected typeHeap type;
+    private static int count = 0;
 
-    public Population() {
+    public Population(Population.typeHeap type) {
         population = new ArrayList<Sim>();
+        this.type=type;
+        count++;
     }
 
     private int getLeftChildIndex(int parentIndex) {return 2 * parentIndex + 1;}
@@ -93,9 +98,9 @@ public class Population implements Comparator<Sim> {
     public int compare(Sim o1, Sim o2) {
         double x = o1.getDeathTime(), y = o2.getDeathTime();
         if (x < y) {
-            return -1;
+            return type == typeHeap.Min? -1 : 1;
         } else if (x > y) {
-            return 1;
+            return type == typeHeap.Min? 1 : -1;
         } else {
             return 0;
         }
