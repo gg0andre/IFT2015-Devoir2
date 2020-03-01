@@ -1,5 +1,6 @@
 package pedigree;
 
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -28,60 +29,71 @@ public class Coalescence {
         sizePopulation = new HashMap<Double, Integer>();
         
         int taille;
-        
-        ArrayList<Sim> pereListe = new ArrayList<Sim>();
-        ArrayList<Sim> mereListe = new ArrayList<Sim>();
+
         
         taille = simulation.population.getSize();
-        sizePopulation.put(Tmax, taille);       //size initial
+        sizePopulation.put(Tmax, taille);       //size final au Tmax
         if (taille == 0) throw new Exception("Population morte");
 
         for (int i=0; i<simulation.population.getSize(); i++) {
             Sim nextSim = simulation.population.deleteMin();
             //distribuer la population selon le sexe
-            if (nextSim.getSex() == pedigree.Sim.Sex.F) {
-                mereListe.add(nextSim);
+            if (nextSim.getSex() == Sim.Sex.M) {
+                coalescencePA.add(nextSim);
             } else {
-                pereListe.add(nextSim);
+                coalescenceMA.add(nextSim);
             }
-        }
-        
-        while (pereListe.size() > 1) {
-            Sim youngestSim = getSim(pereListe);
-            if (!coalescencePA.population.contains(youngestSim.getFather())) {
-                coalescencePA.add(youngestSim);
-            } else {
-                PA.put(youngestSim.getBirthTime(), coalescencePA.getSize());
-            }
-            pereListe.remove(pereListe.indexOf(youngestSim));
-            taille--;
-            sizePopulation.put(youngestSim.getBirthTime(), taille);
-        }
-        
-       
-        while (mereListe.size() > 1) {
-            Sim youngestSim = getSim(mereListe);
-            if (!coalescenceMA.population.contains(youngestSim.getMother())) {
-                coalescenceMA.add(youngestSim);
-            } else {
-                MA.put(youngestSim.getBirthTime(), coalescenceMA.getSize());
-            }
-            mereListe.remove(mereListe.indexOf(youngestSim));
-            taille--; 
-            sizePopulation.put(youngestSim.getBirthTime(), taille);
         }
     }
-    
-    
-    public Sim getSim(ArrayList<Sim> population) {
-        Sim youngestSim = population.get(0);
-        
-        for (int i = 0; i < population.size(); i++) {
-            if (population.get(i).getBirthTime() < youngestSim.getBirthTime()) {
-                youngestSim = population.get(i);
+
+    public HashMap<Double, Integer> makePA() {
+        while (coalescencePA.getSize() != 0) {
+            Sim youngestSim = coalescencePA.deleteMin(); //fonctionne comme un deleteMax a cause du compare de la classe Population
+            double birthTime = youngestSim.getBirthTime();
+            Sim pere = youngestSim.getFather();
+            if (coalescencePA.population.contains(pere) || pere == null) {
+                PA.put(birthTime, coalescencePA.getSize());
+                if (pere == null) break;
+            } else {
+                coalescencePA.add(pere);
             }
         }
-        return youngestSim;
+        return PA;
+    }
+    
+    public HashMap<Double, Integer> makeMA() {
+        while (coalescenceMA.getSize() != 0) {
+            Sim youngestSim = coalescenceMA.deleteMin();
+            double birthTime = youngestSim.getBirthTime();
+            Sim mere = youngestSim.getMother();
+            if (coalescenceMA.population.contains(mere) || mere == null) {
+                MA.put(birthTime, coalescenceMA.getSize());
+                if (mere == null) break;
+            } else {
+                coalescenceMA.add(mere);
+            }
+        }
+        return MA;
+    }
+
+    public HashMap<Double, Integer> makePop() {
+        return sizePopulation;
+    }
+
+    public static void writeToCsvFile (String fileName, HashMap<Double, Integer> hashMap, String s) throws FileNotFoundException {
+        FileOutputStream fos = new FileOutputStream(fileName, true);
+        PrintWriter pw = new PrintWriter(fos);
+
+        pw.println("Annee, " + s);
+        Object[] keyList = hashMap.keySet().toArray();
+        Arrays.sort(keyList);
+
+        for (Object key : keyList) {
+            pw.println(key + "," + hashMap.get(key));
+        }
+
+        pw.close();
+        System.out.println("file " + fileName + " has been written");
     }
 
     public static void main(String[] args) throws Exception {
@@ -94,45 +106,16 @@ public class Coalescence {
             Tmax = Integer.parseInt(args[1]);
 
             Coalescence coalescence = new Coalescence(n, Tmax);
-            FileOutputStream fos1 = new FileOutputStream("pere.csv", true);
-            PrintWriter pw1 = new PrintWriter(fos1);
+            String f1, f2, f3, s1, s2, s3;
+            f1 = "pere.csv"; f2 = "mere.csv"; f3 = "population.csv";
+            s1 = "pere"; s2 = "mere"; s3 = "population";
+            HashMap<Double, Integer> PA = coalescence.makePA();
+            HashMap<Double, Integer> MA = coalescence.makeMA();
+            HashMap<Double, Integer> Pop = coalescence.makePop();
 
-            pw1.println("Annee, pere");
-            Object[] keysPA = coalescence.PA.keySet().toArray();
-            Arrays.sort(keysPA);
-
-            for (Object key1: keysPA) {
-                pw1.println(key1 + "," + coalescence.PA.get(key1));
-            }
-
-            pw1.close();
-            System.out.println("file pere.csv has been written");
-
-            FileOutputStream fos2 = new FileOutputStream("mere.csv", true);
-            PrintWriter pw2 = new PrintWriter(fos2);
-            pw2.println("Annee, mere");
-            Object[] keysMA = coalescence.MA.keySet().toArray();
-            Arrays.sort(keysMA);
-
-            for (Object key2: keysMA) {
-                pw2.println(key2 + "," + coalescence.MA.get(key2));
-            }
-
-            pw2.close();
-            System.out.println("file mere.csv has been written");
-
-            FileOutputStream fos3 = new FileOutputStream("population.csv", true);
-            PrintWriter pw3 = new PrintWriter(fos3);
-            pw3.println("Annee, population");
-            Object[] keysPop = coalescence.sizePopulation.keySet().toArray();
-            Arrays.sort(keysPop);
-
-            for (Object key3: keysPop) {
-                pw3.println(key3 + "," + coalescence.sizePopulation.get(key3));
-            }
-
-            pw3.close();
-            System.out.println("file population.csv has been written");
+            writeToCsvFile(f1, PA, s1);
+            writeToCsvFile(f2, MA, s2);
+            writeToCsvFile(f3, Pop, s3);
 
         }
     }
