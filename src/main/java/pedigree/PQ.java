@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * MinHeap pour la PQ des Events
+ *
+ * - memes fonctions que la classe Population
+ *
+ */
+
 public class PQ implements Comparator<Event> {
     protected ArrayList<Event> PQ;
 

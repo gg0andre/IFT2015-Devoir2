@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc212477-00ed-4f85-96ad-11f064912bb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/AgeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/AgeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Population.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/PQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/PQ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/AgeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/AgeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Coalescence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Coalescence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Population.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulate$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Simulation$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/PQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/PQ.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Simulation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,6 +140,8 @@
       <workItem from="1582829724069" duration="5732000" />
       <workItem from="1582846751599" duration="6620000" />
       <workItem from="1582863703004" duration="5370000" />
+      <workItem from="1582909560985" duration="7440000" />
+      <workItem from="1583028058067" duration="337000" />
     </task>
     <servers />
   </component>
@@ -168,26 +163,26 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="145" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582851767135" />
-    <state width="1237" height="379" key="GridCell.Tab.0.bottom" timestamp="1582869137127">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582929133801">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="379" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
-    <state width="1237" height="379" key="GridCell.Tab.0.center" timestamp="1582869137127">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1582929133801">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="379" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
-    <state width="1237" height="379" key="GridCell.Tab.0.left" timestamp="1582869137127">
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1582929133801">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="379" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
-    <state width="1237" height="379" key="GridCell.Tab.0.right" timestamp="1582869137127">
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1582929133801">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="379" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
     <state width="1237" height="379" key="GridCell.Tab.1.bottom" timestamp="1582869137127">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -213,11 +208,11 @@
     </state>
     <state x="151" y="0" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582527971788" />
     <state x="151" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582436419796" />
-    <state x="339" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582863724198">
+    <state x="339" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1583028058146">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="339" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582768842382" />
-    <state x="339" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1582863724198" />
+    <state x="339" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1583028058146" />
     <state x="204" y="97" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582865539790">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -297,11 +292,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
           <line>144</line>
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Simulation.java</url>
-          <line>129</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
