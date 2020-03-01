@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc212477-00ed-4f85-96ad-11f064912bb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/PQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/PQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pedigree/PQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/PQ.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pedigree/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pedigree/Simulation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
       <recent name="C:\Users\andre\Documents\GitHub\IFT2015-Devoir2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Simulation">
+  <component name="RunManager" selected="Application.Coalescence">
     <configuration name="AgeModel" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pedigree.AgeModel" />
       <module name="IFT2015-Devoir2" />
@@ -62,9 +61,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Population" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pedigree.Population" />
+    <configuration name="Coalescence" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pedigree.Coalescence" />
       <module name="IFT2015-Devoir2" />
+      <option name="PROGRAM_PARAMETERS" value="1000 10000" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pedigree.*" />
@@ -75,10 +75,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Simulation" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pedigree.Simulation" />
+    <configuration name="Population" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pedigree.Population" />
       <module name="IFT2015-Devoir2" />
-      <option name="PROGRAM_PARAMETERS" value="5000 10000" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pedigree.*" />
@@ -104,14 +103,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Simulation" />
+      <item itemvalue="Application.Coalescence" />
       <item itemvalue="Application.AgeModel" />
       <item itemvalue="Application.Population" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Population" />
-        <item itemvalue="Application.Simulation" />
+        <item itemvalue="Application.Coalescence" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +140,7 @@
       <workItem from="1582846751599" duration="6620000" />
       <workItem from="1582863703004" duration="5370000" />
       <workItem from="1582909560985" duration="7440000" />
-      <workItem from="1583028058067" duration="337000" />
+      <workItem from="1583028058067" duration="12257000" />
     </task>
     <servers />
   </component>
@@ -149,11 +148,11 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582868757531">
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583039825002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582851769791" />
-    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582868757531" />
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583039825002" />
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1583028537684" />
     <state x="447" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1582865859822">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -163,26 +162,26 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="145" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582851767135" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582929133801">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1583045431045">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1582929133801">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583045431045" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583028798703" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1583045431045">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1582929133801">
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583045431045" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583028798703" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1583045431045">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1582929133801">
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583045431045" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583028798703" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1583045431045">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582857522486" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582929133801" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583045431045" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583028798703" />
     <state width="1237" height="379" key="GridCell.Tab.1.bottom" timestamp="1582869137127">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -217,6 +216,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="204" y="97" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.720@0.0.1280.720" timestamp="1582865539790" />
+    <state x="0" y="0" width="744" height="720" key="find.popup" timestamp="1583043052402">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="0" y="0" width="744" height="720" key="find.popup/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583043052402" />
     <state x="75" y="63" key="new project wizard" timestamp="1582527304602">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

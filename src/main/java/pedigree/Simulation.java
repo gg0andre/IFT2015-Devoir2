@@ -79,7 +79,7 @@ public class Simulation {
                     case Death:
                     default:
                         E.sim.setDeathTime(E.time);
-                        //System.out.println("Population remaining : " + population.getSize() + "\tat time : " + E.time);
+                        System.out.println("Population remaining : " + population.getSize() + "\tat time : " + E.time);
 
                         //J'ai decider de forcer le remove direct dans le arraylist, car ca fonctionnait mieux
                         // que deleteMin() de la class Population
