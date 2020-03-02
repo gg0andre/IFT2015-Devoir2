@@ -20,7 +20,7 @@ import java.util.HashMap;
  * ---------------------------- NOTE -------------------------------
  * Effacer le contenu des fichiers mere.csv, pere.csv et population.csv
  * pour tester les simulations. Ces fichiers contiennet les resultats de
- * la simulation que j'ai effectuer avec n = 5000 et Tmax = 50000
+ * la simulation que j'ai effectuer avec n = 1000 et Tmax = 10000
  *
  *
  */
