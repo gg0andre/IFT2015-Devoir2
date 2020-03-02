@@ -171,10 +171,10 @@ public class AgeModel {
         avg /= smp_size;
         Arrays.sort(lifespan);
 
-        // plot for distrubution function - 1st and 3rd columns should match (empirical vs. theoretical cumulative distribution function)
-//        for (int r = 0; r<smp_size; r++) {
-//            System.out.println((1+r)+"\t"+lifespan[r]+"\t"+smp_size*(1.0-M.getSurvival(lifespan[r])));
-//        }
+        //plot for distrubution function - 1st and 3rd columns should match (empirical vs. theoretical cumulative distribution function)
+        for (int r = 0; r<smp_size; r++) {
+            System.out.println((1+r)+"\t"+lifespan[r]+"\t"+smp_size*(1.0-M.getSurvival(lifespan[r])));
+        }
         double span = M.expectedParenthoodSpan(Sim.MIN_MATING_AGE_F, Sim.MAX_MATING_AGE_F);
         double stable_rate = 2.0/span;
         System.out.println("avg\t"+avg+"\tmating span(mother): "+span+"\tstable "+stable_rate+"\t// 1/"+span/2.0);

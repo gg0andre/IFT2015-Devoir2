@@ -1,22 +1,39 @@
 package pedigree;
 
-
-import java.util.PriorityQueue;
+import java.util.HashMap;
 import java.util.Random;
+
+/***
+ * Fait par : Andre-Viet Tran et Adrian Necula
+ *
+ * Date : 30 Fevrier 2020
+ *
+ * But : Simuler la population selon la taille entree (n) et le temps maximum (Tmax)
+ *
+ * Attribut : - ageModel pour access aux regles definies par le prof
+ *            - population pour stocker la liste de la population de type minHeap
+ *            - PQ pour la liste des evenements qui fonctionne comme un minHeap
+ *            - totalPopulation pour stocker la taille de la population pour un echantillon de 100 ans (qui nous aidera
+ *            pour la class Coalescence)
+ *
+ *
+ */
 
 public class Simulation {
     private AgeModel ageModel;
     protected Population population;
     private PQ eventQ;
     private Random RND = new Random();
+    protected HashMap<Double,Integer> totalPopulation; //attribut pour suivre la taille de la population selon le temps
 
-    public double birthRate;
+    private double birthRate;
     private static final double FIDELITY = 0.9;
 
     public void simulate(int n, double Tmax) {
         this.eventQ = new PQ();                   // file de priorité
         this.population = new Population(Population.typeHeap.Min);  //notre population de type HeapMin
         this.ageModel = new AgeModel();
+        this.totalPopulation = new HashMap<Double, Integer>();
 
         birthRate = 2.0 / ageModel.expectedParenthoodSpan(Sim.MIN_MATING_AGE_F, Sim.MAX_MATING_AGE_F);
         Sim foundateur;
@@ -35,8 +52,9 @@ public class Simulation {
             if (E.sim.getDeathTime() > E.time) {
                 //System.out.println("population : " + population.getSize() + "\tat time : " + E.time);
                 switch (E.type) {
-                    case Birth:
+                    case Birth:     //naissance du nouveau sim
                         if (E.sim.getSex() == Sim.Sex.F) {
+                            //creer un event de type Reproduction seulement au femme et l'ajouter au PQ
                             double reproductionTime = ageModel.randomWaitingTime(RND, birthRate) + E.time;
                             Event reproductionEvent = new Event(E.sim,  reproductionTime, Event.eventType.Reproduction);
                             this.eventQ.add(reproductionEvent);
@@ -45,16 +63,19 @@ public class Simulation {
                         //duree de vie du sim + temp de naissance
                         double deathTime = ageModel.randomAge(RND) + E.time;
 
-                        //creer le event et l'ajouter a la PQ
+                        //creer le event de type Death et l'ajouter a la PQ
                         Event death = new Event(E.sim, deathTime, Event.eventType.Death);
                         this.eventQ.add(death);
 
-                        //ajouter la liste de population
+                        //ajouter le sim a la liste de population
                         this.population.add(E.sim);
+
+                        //echantillonner pour chaque 100ans
+                        this.totalPopulation.put((double) Math.round(E.time/100) * 100, population.getSize());
                         break;
 
-                    case Reproduction:
-                        if (E.sim.getDeathTime() <= E.time) break;
+                    case Reproduction:  //reproduction d'un nouveau sim
+                        if (E.sim.getDeathTime() <= E.time) break;  //verifier si la mere est morte
 
                         if (E.time - E.sim.getBirthTime() >= Sim.MIN_MATING_AGE_F &&
                                 E.time - E.sim.getBirthTime() <= Sim.MAX_MATING_AGE_F) {
@@ -71,19 +92,21 @@ public class Simulation {
 
                         }
 
+                        //ajouter une autre reproduction a la mere (avec un temps)
                         double reproductionWaitTime = ageModel.randomWaitingTime(RND, birthRate) + E.time;
                         Event reproductionEvent = new Event(E.sim, reproductionWaitTime, Event.eventType.Reproduction);
                         this.eventQ.add(reproductionEvent);
 
                         break;
-                    case Death:
+
+                    case Death:     //mort du sim
                     default:
                         E.sim.setDeathTime(E.time);
-                        System.out.println("Population remaining : " + population.getSize() + "\tat time : " + E.time);
+                        //System.out.println("Population remaining : " + population.getSize() + "\tat time : " + E.time);
 
                         //J'ai decider de forcer le remove direct dans le arraylist, car ca fonctionnait mieux
                         // que deleteMin() de la class Population
-                        population.population.remove(E.sim);
+                        population.population.remove(E.sim);    //enlever de la population
                         //population.deleteMin();
                         break;
                 }
@@ -100,7 +123,7 @@ public class Simulation {
         }
     }
 
-    //fonction pour choisir un (nouveau ou ancien) partenaire pour la mere
+    //fonction pour choisir un nouveau ou ancien partenaire pour la mere
     public Sim chooseMate(Sim x, double time) {
         Sim y = null;
         Sim z;

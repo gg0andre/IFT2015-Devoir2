@@ -4,10 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-/**
- * MinHeap pour la PQ des Events
+/***
+ * Fait par : Andre-Viet Tran et Adrian Necula
  *
- * - memes fonctions que la classe Population
+ * Date : 24 Fevrier 2020
+ *
+ * But : similaire pour la classe Population, mais pour stocker les evenements
+ *      avec un arrayList avec les fonctionnalites de minHeap
+ *
+ * Methodes supplementaires : isEmpty() pour verifier si la taille est 0 ou non
  *
  */
 

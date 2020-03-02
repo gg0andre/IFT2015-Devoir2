@@ -1,10 +1,22 @@
 package pedigree;
 
 /**
- * MinHeap
+ * Fait par : Andre-Viet Tran et Adrian Necula
  *
- * fonctions principales : deleteMin() et add(Sim newSim)
- * implementent les methodes sink() et swim()
+ * Date : 24 Fevrier 2020
+ *
+ * But : Classe pour de type minHeap ou de type maxHeap pour la liste de Sim
+ *
+ * Attributs : - un arrayList pour stocker la population
+ *             - le type de tableau qu'on vas utiliser (minHeap ou maxHeap)
+ *
+ * Methodes principales : - deleteMin pour retirer le premier element du arraylist et les ordonner avec
+  *              sink() (fonctionne comme un deleteMax si on met le type MaxHeap)
+ *                        - add pour ajouter des sims et les ordonner avec swim()
+ *
+ * Methodes secondaires : - getSize() : pour le size de la population
+ *                        - randomSim() : sim aleatoire
+ *                        - peek() : pour verifier si un sim est dans la liste
  *
  */
 
@@ -17,12 +29,10 @@ public class Population implements Comparator<Sim> {
     protected ArrayList<Sim> population;        //arrayList pour la population
     protected enum typeHeap{Min, Max};
     protected typeHeap type;
-    private static int count = 0;
 
     public Population(Population.typeHeap type) {
         population = new ArrayList<Sim>();
         this.type=type;
-        count++;
     }
 
     private int getLeftChildIndex(int parentIndex) {return 2 * parentIndex + 1;}
@@ -41,12 +51,16 @@ public class Population implements Comparator<Sim> {
     }
 
     public Sim peek() {
-        if(population.size() == 0) throw new IllegalStateException();
-        return population.get(0);
+        if(population.size() == 0) throw new IllegalStateException("Population absente");
+        return population.get(0);       //retourner le premier element du arrayList
     }
 
+    /**
+     * enelever le premier du arrayList et reordonner celle-ci avec sink en comparant avec ses enfants
+     * @return sim[0]
+     */
     public Sim deleteMin() {
-        if(population.size() == 0) throw new IllegalStateException("No population ");
+        if(population.size() == 0) throw new IllegalStateException("Population absente");
 
         Sim sim = population.get(0);
         int last = population.size() - 1;
@@ -77,6 +91,10 @@ public class Population implements Comparator<Sim> {
 
     }
 
+    /**
+     * Ajouter le sim au dernier position du arrayList et ordonner avec swim() en comparant avec ses parents
+     * @param newSim
+     */
     public void add(Sim newSim) {
         population.add(newSim);
         swim(population.size()-1);
@@ -117,7 +135,7 @@ public class Population implements Comparator<Sim> {
     }
 
 //    public static void main(String[] args) {
-//        Population M = new Population();
+//        Population M = new Population(typeHeap.Min);
 //        Sim s0 = new Sim(Sim.Sex.F);
 //        Sim s1 = new Sim(Sim.Sex.M);
 //        Sim s2 = new Sim(s0,s1,10.0, Sim.Sex.F);
