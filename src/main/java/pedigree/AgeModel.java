@@ -145,42 +145,42 @@ public class AgeModel {
      *
      * @param args accident-rate death-rate [scale]
      */
-    public static void main(String[] args)    {
-        int arg_idx = 0;
-        double acc = Double.parseDouble(args[arg_idx++]);
-        double dth = Double.parseDouble(args[arg_idx++]);
-        double scale = DEFAULT_SCALE;
-
-        if (arg_idx<args.length)
-            scale = Double.parseDouble(args[arg_idx++]);
-
-        AgeModel M= new AgeModel(acc, dth, scale);
-
-        Random RND = new Random();
-
-        int smp_size = 1000; // this many random values
-
-        double[] lifespan = new double[smp_size];
-
-        double avg = 0.0;
-        for (int r=0; r<smp_size; r++) {
-            double d = M.randomAge(RND);
-            avg += d;
-            lifespan[r] = d;
-        }
-        avg /= smp_size;
-        Arrays.sort(lifespan);
-
-        //plot for distrubution function - 1st and 3rd columns should match (empirical vs. theoretical cumulative distribution function)
-        for (int r = 0; r<smp_size; r++) {
-            System.out.println((1+r)+"\t"+lifespan[r]+"\t"+smp_size*(1.0-M.getSurvival(lifespan[r])));
-        }
-        double span = M.expectedParenthoodSpan(Sim.MIN_MATING_AGE_F, Sim.MAX_MATING_AGE_F);
-        double stable_rate = 2.0/span;
-        System.out.println("avg\t"+avg+"\tmating span(mother): "+span+"\tstable "+stable_rate+"\t// 1/"+span/2.0);
-
-//        Coalescence coalescence = new Coalescence(10, 100);
-//        System.out.println("\ntest" + coalescence.PA.size());
-    }
+//    public static void main(String[] args)    {
+//        int arg_idx = 0;
+//        double acc = Double.parseDouble(args[arg_idx++]);
+//        double dth = Double.parseDouble(args[arg_idx++]);
+//        double scale = DEFAULT_SCALE;
+//
+//        if (arg_idx<args.length)
+//            scale = Double.parseDouble(args[arg_idx++]);
+//
+//        AgeModel M= new AgeModel(acc, dth, scale);
+//
+//        Random RND = new Random();
+//
+//        int smp_size = 1000; // this many random values
+//
+//        double[] lifespan = new double[smp_size];
+//
+//        double avg = 0.0;
+//        for (int r=0; r<smp_size; r++) {
+//            double d = M.randomAge(RND);
+//            avg += d;
+//            lifespan[r] = d;
+//        }
+//        avg /= smp_size;
+//        Arrays.sort(lifespan);
+//
+//        //plot for distrubution function - 1st and 3rd columns should match (empirical vs. theoretical cumulative distribution function)
+//        for (int r = 0; r<smp_size; r++) {
+//            System.out.println((1+r)+"\t"+lifespan[r]+"\t"+smp_size*(1.0-M.getSurvival(lifespan[r])));
+//        }
+//        double span = M.expectedParenthoodSpan(Sim.MIN_MATING_AGE_F, Sim.MAX_MATING_AGE_F);
+//        double stable_rate = 2.0/span;
+//        System.out.println("avg\t"+avg+"\tmating span(mother): "+span+"\tstable "+stable_rate+"\t// 1/"+span/2.0);
+//
+////        Coalescence coalescence = new Coalescence(10, 100);
+////        System.out.println("\ntest" + coalescence.PA.size());
+//    }
 
 }

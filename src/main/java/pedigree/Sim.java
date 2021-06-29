@@ -33,7 +33,6 @@ public class Sim implements Comparable<Sim> {
      * @param o
      * @return
      */
-    @Override
     public int compareTo(Sim o)
     {
         return Double.compare(this.deathtime,o.deathtime);

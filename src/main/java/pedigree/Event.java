@@ -29,7 +29,6 @@ public class Event implements Comparable<Event> {
         }
     }
 
-    @Override
     public int compareTo(Event o) {
         if(this.time<o.time) { return -1; }
         if(this.time==o.time) { return 0; }

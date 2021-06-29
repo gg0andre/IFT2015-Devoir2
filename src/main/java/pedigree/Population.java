@@ -112,7 +112,6 @@ public class Population implements Comparator<Sim> {
     }
 
 
-    @Override
     public int compare(Sim o1, Sim o2) {
         double x = o1.getDeathTime(), y = o2.getDeathTime();
         if (x < y) {

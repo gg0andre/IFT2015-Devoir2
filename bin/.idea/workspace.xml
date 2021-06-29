@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc212477-00ed-4f85-96ad-11f064912bb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mere.csv" beforeDir="false" afterPath="$PROJECT_DIR$/mere.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pere.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pere.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/population.csv" beforeDir="false" afterPath="$PROJECT_DIR$/population.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedigree/Coalescence.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YC9fg5tOyblI3AJ2g7pzNp8rTj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\Documents\GitHub\IFT2015-Devoir2\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Coalescence">
+    <configuration name="AgeModel" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pedigree.AgeModel" />
+      <module name="IFT2015-Devoir2" />
+      <option name="PROGRAM_PARAMETERS" value="10 200" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Coalescence" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pedigree.Coalescence" />
+      <module name="IFT2015-Devoir2" />
+      <option name="PROGRAM_PARAMETERS" value="1000 10000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pedigree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Population" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pedigree.Population" />
+      <module name="IFT2015-Devoir2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pedigree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Simulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pedigree.Simulation" />
+      <module name="IFT2015-Devoir2" />
+      <option name="PROGRAM_PARAMETERS" value="5 500" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pedigree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Coalescence" />
+      <item itemvalue="Application.AgeModel" />
+      <item itemvalue="Application.Simulation" />
+      <item itemvalue="Application.Population" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Population" />
+        <item itemvalue="Application.Coalescence" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc212477-00ed-4f85-96ad-11f064912bb1" name="Default Changelist" comment="" />
+      <created>1582435813326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582435813326</updated>
+      <workItem from="1582435816496" duration="1470000" />
+      <workItem from="1582503638274" duration="1453000" />
+      <workItem from="1582506094546" duration="14584000" />
+      <workItem from="1582522271214" duration="8487000" />
+      <workItem from="1582566990030" duration="5951000" />
+      <workItem from="1582573061449" duration="6400000" />
+      <workItem from="1582585473904" duration="440000" />
+      <workItem from="1582665712573" duration="7694000" />
+      <workItem from="1582676735983" duration="4354000" />
+      <workItem from="1582681223329" duration="387000" />
+      <workItem from="1582684312880" duration="1507000" />
+      <workItem from="1582768842797" duration="9715000" />
+      <workItem from="1582829724069" duration="5732000" />
+      <workItem from="1582846751599" duration="6620000" />
+      <workItem from="1582863703004" duration="5370000" />
+      <workItem from="1582909560985" duration="7440000" />
+      <workItem from="1583028058067" duration="12357000" />
+      <workItem from="1583087197695" duration="2607000" />
+      <workItem from="1583124439483" duration="215000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583124611522">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583039825002" />
+    <state x="97" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1583124611522" />
+    <state x="447" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1582865859822">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="447" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582516726366" />
+    <state x="447" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582865859822" />
+    <state x="371" y="145" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582851767135">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="145" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582851767135" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1583124664268">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583089847949" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583124664268" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1583124664268">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583089847949" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583124664268" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1583124664268">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583089847949" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583124664268" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1583124664268">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583089847949" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583124664268" />
+    <state width="1237" height="379" key="GridCell.Tab.1.bottom" timestamp="1582869137127">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="379" key="GridCell.Tab.1.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
+    <state width="1237" height="379" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
+    <state width="1237" height="379" key="GridCell.Tab.1.center" timestamp="1582869137127">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="379" key="GridCell.Tab.1.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
+    <state width="1237" height="379" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
+    <state width="1237" height="379" key="GridCell.Tab.1.left" timestamp="1582869137127">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="379" key="GridCell.Tab.1.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
+    <state width="1237" height="379" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
+    <state width="1237" height="379" key="GridCell.Tab.1.right" timestamp="1582869137127">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="379" key="GridCell.Tab.1.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582777091290" />
+    <state width="1237" height="379" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582869137127" />
+    <state x="151" y="0" key="SettingsEditor" timestamp="1582527971788">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="151" y="0" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582527971788" />
+    <state x="151" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582436419796" />
+    <state x="339" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1583124472421">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="339" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583087260404" />
+    <state x="339" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1583124472421" />
+    <state x="204" y="97" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582865539790">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="204" y="97" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.720@0.0.1280.720" timestamp="1582865539790" />
+    <state x="0" y="0" width="744" height="720" key="find.popup" timestamp="1583043052402">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="0" y="0" width="744" height="720" key="find.popup/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1583043052402" />
+    <state x="75" y="63" key="new project wizard" timestamp="1582527304602">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="75" y="63" key="new project wizard/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582527304602" />
+    <state x="349" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1582863779014">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="349" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1582863779014" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1582851442568">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1582851442568" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pedigree/Population.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IFT2015_Devoir2$Simulation.ic" NAME="Simulation Coverage Results" MODIFIED="1582577259833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pedigree.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/IFT2015_Devoir2$MinHeap.ic" NAME="MinHeap Coverage Results" MODIFIED="1582526146747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pedigree.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -102,7 +102,7 @@ public class Simulation {
                     case Death:     //mort du sim
                     default:
                         E.sim.setDeathTime(E.time);
-                        //System.out.println("Population remaining : " + population.getSize() + "\tat time : " + E.time);
+                        System.out.println("Population remaining : " + population.getSize() + "\tat time : " + E.time);
 
                         //J'ai decider de forcer le remove direct dans le arraylist, car ca fonctionnait mieux
                         // que deleteMin() de la class Population
@@ -142,22 +142,22 @@ public class Simulation {
         return y;
     }
 
-//    public static void main(String[] args) {
-//        int n; int Tmax;
-//       // double startTime = System.nanoTime();
-//
-//        if (args.length != 2) {
-//            System.out.println("Invalid number of arguments");
-//        } else {
-//            n = Integer.parseInt(args[0]);
-//            Tmax = Integer.parseInt(args[1]);
-//
-//            Simulation test = new Simulation();
-//            test.simulate(n,Tmax);
-//
-//        }
-////        double endTime = System.nanoTime();
-////        System.out.println("Le programme a pris (en ms) : " + (endTime - startTime)/1000000);
-//    }
+    public static void main(String[] args) {
+        int n; int Tmax;
+        double startTime = System.nanoTime();
+
+        if (args.length != 2) {
+            System.out.println("Invalid number of arguments");
+        } else {
+            n = Integer.parseInt(args[0]);
+            Tmax = Integer.parseInt(args[1]);
+
+            Simulation test = new Simulation();
+            test.simulate(n,Tmax);
+
+        }
+        double endTime = System.nanoTime();
+        System.out.println("Le programme a pris (en ms) : " + (endTime - startTime)/1000000);
+    }
 
 }
